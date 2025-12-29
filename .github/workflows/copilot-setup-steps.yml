@@ -1,7 +1,10 @@
 name: "Copilot Setup Steps"
 
 # Allows you to test the setup steps from your repository's "Actions" tab
-on: workflow_dispatch
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 0 * * *"
 
 jobs:
   copilot-setup-steps:
